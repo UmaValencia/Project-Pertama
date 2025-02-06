@@ -3,137 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preset Alight Motion - UmaValencia</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .preset-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            max-width: 300px;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .preset-card img {
-            width: 100%;
-        }
-
-        .preset-card h3 {
-            color: #333;
-            margin: 15px 0;
-        }
-
-        .preset-card p {
-            color: #777;
-            padding: 0 15px;
-            font-size: 14px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin: 15px 0;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #45a049;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>UmaValencia Preset</title>
+    <link rel="stylesheet" href="halaman2.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <header>
+        <h1 class="logo">UmaValencia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Logout</a></li>
+             </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Selamat Datang di UmaValencia Preset</h1>
-    <p>Koleksi Preset Alight Motion Terbaik untuk Editing Video Anda!</p>
-    <p>Web Ini Masih Tahap Perkembangan Atau Masih Uji Coba</p>
-</header>
-
-<nav>
-    <a href="index.html">Beranda</a>
-    <a href="penjualan.html">Preset</a>
-    <a href="kontak.html">Kontak</a>
-</nav>
-
-<div class="container">
-    <div class="preset-card">
-        <img src="https://source.unsplash.com/300x200/?motion,graphics" alt="Preset Cinematic Glow">
-        <h3>Preset Cinematic Glow</h3>
-        <p>Efek cinematic glow yang membuat video Anda terlihat profesional dan memukau.</p>
-        <a href="#" class="btn">Beli Sekarang</a>
-    </div>
-
-    <div class="preset-card">
-        <img src="https://source.unsplash.com/300x200/?video,effects" alt="Preset Smooth Transition">
-        <h3>Preset Smooth Transition</h3>
-        <p>Transisi halus untuk membuat perpindahan antar klip lebih elegan.</p>
-        <a href="#" class="btn">Beli Sekarang</a>
-    </div>
-
-    <div class="preset-card">
-        <img src="https://source.unsplash.com/300x200/?creative,design" alt="Preset Retro Vibes">
-        <h3>Preset Retro Vibes</h3>
-        <p>Efek retro yang membawa nuansa klasik dan artistik ke video Anda.</p>
-        <a href="#" class="btn">Beli Sekarang</a>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2024 UmaValencia Preset. All Rights Reserved.</p>
-</footer>
+    <section class="hero">
+        <h2 class="fade-in">Transform Your Edits with</h2>
+        <h1 class="glitch">UMAEDI •PRESET• </h1>
+        <a href="jelajahi.html" class="btn">Jelajahi Preset</a>
+    </section>
 
 </body>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 100, density: { enable: true, value_area: 800 } },
+            color: { value: "#00ffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            move: { enable: true, speed: 2, direction: "none" },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#00ffff",
+                opacity: 0.4,
+                width: 1
+            }
+        }
+    });
+</script>
 </html>
